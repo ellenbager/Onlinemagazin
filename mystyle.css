@@ -1,0 +1,130 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+.page__body {
+    font-family: Verdana, Geneva, sans-serif;
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+/*------ Header and navigation ------*/
+
+.navigation__container {
+    position: relative;
+    top: 0;
+    background-color: #B3A293;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(34, 56, 178, 0.21);
+}
+
+.menuitem {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    /* color: white; */
+    color: #f2f2f2;
+    text-decoration: none;
+    text-align: center;
+}
+.active_menuitem  {
+    background-color: #9e8672;
+    color: #aeafb0;
+}
+
+.menuitems__container {
+    display: none;
+}
+
+.navigation__container input:checked~.menuitems__container {
+    display: block;
+}
+
+.menuitems__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menuitem {
+    width: 300px;
+}
+.menuitem:hover {
+    background-color: #9e8672;
+    color: #aeafb0;
+}
+
+/* ---- Main sectiom ---- */
+
+/* ---- menu section ---- */
+
+.spisestue_image {
+    width: 65%;
+}
+
+.firkant{
+    width: 38%;
+    height: 430px;
+    background-color: #839885;
+    border: 26px solid #839885;
+    margin-left: 60%;
+    margin-top: 30px;
+    position: absolute;
+}
+
+/* ---- articel section ---- */ 
+
+.tekst {
+    width: 70%;
+    margin-left: 15%;
+    padding: 30px;
+}
+
+.billede {
+    width: 70%;
+    align-items: center;
+    margin-left: 15%;
+}
+
+/*------ Footer section ------*/
+
+.page_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10rem;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid black;
+    padding: 150px;
+    background-color: #687e8e;
+}
+
+.footer_link{
+    color: black;
+}
+
+.some_image {
+    width: 32px;
+    margin-right: 16px;
+}
+
+.footer_card_heading {
+    margin-bottom: 7px;
+
+}
+
+.footer_card:first-child .footer_card_heading {
+    margin-bottom: 16px;
+}
+
